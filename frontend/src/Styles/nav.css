@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+
+:root {
+    --dark-green: #112a34;
+    --green-color: #004047;
+    --white-color: #fff;
+}
+
+::selection {
+    background: var(--green-color);
+    color: var(--white-color);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 90%;
+}
+
+section {
+    padding: 0 8rem;
+    width: 100%;
+}
+
+.label {
+    font-size: 1.1rem;
+    color:  #666;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+section.home {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.home .home-box {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("https://www.justahotels.com/wp-content/uploads/2023/10/Places-To-Visit-in-Manali.jpg");    /*home-background.jpg */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+ nav {
+    width: 98%;
+    height: 65px;
+    background: linear-gradient(rgb(255,255,255,.2),rgb(255,255,255,.2));
+    backdrop-filter: blur(1px);
+    border-radius: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    margin-left: 15px;
+    margin-top: 12px;
+    z-index: 10;
+    position: relative;
+}
+.cart-Box{
+    position: absolute;
+    height: 725px;
+    width: 450px;
+    right: 0;
+    top: 0;
+    transform: translateX(400px);
+    transition:all 0.3s ease-in;
+    z-index: 4;
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.841));
+   backdrop-filter: blur(1px);
+}
+.closeBtn{
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    position: absolute;
+   background:transparent;
+   border: none;
+    right: 0;
+    color: white;
+    
+}
+.loginBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.841));
+   backdrop-filter: blur(1px);
+   transition: all 0.3s ease-in;
+   scale: 0;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ nav .logo .bar {
+    font-size: 1.35rem;
+    color: var(--white-color);
+    cursor: pointer;
+    display: none;
+}
+
+ nav .logo .bar:hover {
+    color: var(--green-color);
+}
+
+ nav .logo h3 {
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+ nav .menu .close {
+    display: none;
+}
+
+ nav .menu ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+ nav .menu ul li a {
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+ nav .menu ul li a:hover {
+    color: rgb(255 255 255/70%);
+}
+
+ nav .signup-login {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+button{
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+ nav .signup-login a {
+    color: var(--white-color);
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+}
+
+ nav .signup-login a:last-child {
+    background: var(--green-color);
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+}
+
+ nav .signup-login a:hover {
+    color: rgb(255 255 255/70%);
+}
+
+ nav .signup-login a:last-child:hover {
+    color: var(--white-color);
+    background: #02636e;
+}
+
