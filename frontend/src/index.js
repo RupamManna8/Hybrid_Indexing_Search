@@ -1,19 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import HomePage from './Pages/landingPage/homePage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import ProductSearch from "./Pages/shoppingPage/searchPage";
 
-
-
-
-
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
- <HomePage/>
+    <ProductSearch />
   </React.StrictMode>
 );
 
