@@ -210,7 +210,7 @@ const products = [
     name: "Samsung Galaxy Buds Pro",
     keywords: ["earbuds", "samsung", "audio", "galaxy buds pro"],
     image:
-      "https://m.media-amazon.com/images/I/41HrTz7oZPL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/61KVX-MbIUL.jpg",
     price: 14999,
     description:
       "Samsung Galaxy Buds Pro deliver superior sound quality with active noise cancellation and a comfortable fit for all-day wear.",
