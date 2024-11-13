@@ -586,7 +586,7 @@ const products = [
     name: "Google Pixel 5a",
     keywords: ["smartphone", "google", "phone", "google pixel 5a"],
     image:
-      "https://www.triveniworld.com/cdn/shop/files/google-pixel-5a-5g-6gb128gb-refurbished-triveni-world-1_1024x1024.jpg?v=1725234558",
+      "https://cdn.dxomark.com/wp-content/uploads/medias/post-59199/google_pixel_5_frontback-1024x768.jpeg",
     price: 13999,
   },
   {
