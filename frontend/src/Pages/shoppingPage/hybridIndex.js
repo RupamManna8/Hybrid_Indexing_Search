@@ -25,7 +25,6 @@ class BTree {
       }
       this.index.get(term).add(productId);
     }
-  
     search(term) {
       return this.index.get(term) || new Set();
     }

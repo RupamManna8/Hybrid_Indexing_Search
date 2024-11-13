@@ -7,6 +7,7 @@ import ProductGrid from "./productGrid.jsx";
 import "../../Styles/searchPage.css";
 import products from "../../Data/data.js";
 import Checkout from "./checkout.jsx";
+import { useLocation } from "react-router-dom";
 
 // Initialize the hybridIndex with products
 products.forEach((product) => hybridIndex.addProduct(product));
@@ -21,6 +22,9 @@ const ProductSearch = () => {
   const [accountuser, setAccountUser] = useState([]);
   const [checkout,setCheckout] = useState(false);
   const [checkoutProduct,setCheckoutProduct] = useState([]);
+  const [loginAction, setLoginAction] = useState(false);
+  const location = useLocation();
+  const userID = new URLSearchParams(location.search).get("userID");
   // Track if it's the first render
   const isFirstRender = useRef(true);
 
@@ -127,6 +131,37 @@ const ProductSearch = () => {
     setCheckout(false); 
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      if (userID.length>10) {
+        console.log(userID);
+  
+        try {
+          const response = await fetch(`http://localhost:9000/users/${userID}`, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+  
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+  
+          const data = await response.json();
+          setAccountUser(data);
+          setCart(data.Cart || []);
+          setLoginAction(true);
+          console.log(data);
+        } catch (error) {
+          console.error("Fetch error:", error);
+        }
+      }
+    };
+  
+    fetchData();
+  }, [userID]);
+  
   
   useEffect(() => {
     const defaultProducts = products.filter((data) => data.default === "yes");
@@ -140,7 +175,7 @@ const ProductSearch = () => {
 
   return (
     <React.Fragment>
-      <Nav cart={cart} setCart={setCart} user={accountuser} setUser={setAccountUser} updateUser={updateUser}/>
+      <Nav cart={cart} setCart={setCart} user={accountuser} setUser={setAccountUser} updateUser={updateUser} loginAction={loginAction} setLoginAction={setLoginAction}/>
       {checkout ? <Checkout checkoutProduct={checkoutProduct} handleBackToSearch={handleBackToSearch} /> : (<div className="search-container">
         <Filter
           priceHightoLow={priceHighToLow}

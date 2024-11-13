@@ -1,36 +1,45 @@
 import React, { useState } from "react";
 import "../../Styles/nav.css";
-import AddToCart from "../shoppingPage/addtoCart.jsx";
 import LoginPage from "../auth/login.jsx";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
-export default function HomePage({ cart, setCart,user,setUser}) {
+
+
+export default function HomePage() {
   const [menuActive, setMenuActive] = useState(false);
   const [scale, setScale] = useState("550px");
   const [loginAction, setLoginAction] = useState(false);
   const [loginPage, setLoginPage] = useState(0);
+  const [user,setuser] = useState([]);
 
   const handleLogin = () => {
    setLoginPage(1);
   };
-  
-  
-  const settingCart = async ()=>{
-    if(loginAction){
-      const cartResponse = await fetch(`http://localhost:9000/users/cart/${user._id}`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
 
-      if (cartResponse.ok) {
-        const res = await cartResponse.json();
-        setCart(res.map(item => ({ ...item, quantity: item.quantity || 1 })));
-      } else {
-        console.error("Failed to fetch updated cart:", cartResponse.statusText);
-      }
+  const navigate  = useNavigate();
+  
+  const passingUserId = ()=>{
+    if(user){
+    navigate(`/buyItem?userID=${user._id}`);
     }
   }
+  // const settingCart = async ()=>{
+  //   if(loginAction){
+  //     const cartResponse = await fetch(`http://localhost:9000/users/cart/${user._id}`, {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
+
+  //     if (cartResponse.ok) {
+  //       const res = await cartResponse.json();
+  //       setCart(res.map(item => ({ ...item, quantity: item.quantity || 1 })));
+  //     } else {
+  //       console.error("Failed to fetch updated cart:", cartResponse.statusText);
+  //     }
+  //   }
+  // }
 
   return (
     <React.Fragment>
@@ -50,7 +59,7 @@ export default function HomePage({ cart, setCart,user,setUser}) {
               <a>Home</a>
             </li>
             <li>
-              <a>Shop</a>
+              <a onClick={passingUserId}>Shop</a>
             </li>
             <li>
               <a>About us</a>
@@ -59,7 +68,7 @@ export default function HomePage({ cart, setCart,user,setUser}) {
         </div>
         <div className="signup-login">
           <div className="user" style={{ display: `${loginAction ? "block":"none"}` ,color:"white",textAlign:"center",marginLeft:"10px"}}>
-           
+            {user.Name}
           </div>
           <div className="loginSection" style={{ display: `${loginAction ? "none":"block"}` }}>
         
@@ -70,11 +79,11 @@ export default function HomePage({ cart, setCart,user,setUser}) {
             <LoginPage
               loginAction={loginAction}
               setLoginAction={setLoginAction}
-              setUser={setUser}
+              setUser={setuser}
             />
           </div>
 
-          <button onClick={() =>{ setScale("0px");settingCart();}}>Cart</button>
+          {/* <button onClick={() =>{ setScale("0px");settingCart();}}>Cart</button>
           <div
             className="cart-Box"
             style={{ transform: `translateX(${scale})` }}
@@ -83,7 +92,7 @@ export default function HomePage({ cart, setCart,user,setUser}) {
               x
             </button>
             <AddToCart cart={cart} setCart={setCart} />
-          </div>
+          </div> */}
         </div>
       </nav>
     </React.Fragment>

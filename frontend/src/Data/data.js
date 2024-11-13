@@ -1,14 +1,15 @@
 const products = [
   {
     id: 1,
-    name: "iPhone 13",
+    name: "iPhone 16",
     keywords: ["smartphone", "apple", "phone", "iphone13"],
     image:
-      "https://m.media-amazon.com/images/I/31tyUh1todL.SY445_SX342_QL70_FMwebp.jpg",
-    price: 40000,
+      "https://inspireonline.in/cdn/shop/files/iPhone_16_White_PDP_Image_Position_1__en-IN_0679870b-7ec2-48f4-ab75-f3526247d913.jpg?v=1727247838",
+    price: 70000,
     default:"yes",
+    home:'yes',
     description:
-      "The iPhone 13 features a 6.1-inch Super Retina XDR display, A15 Bionic chip, and improved battery life. It has a dual-camera system with Night mode and cinematic mode for video recording, providing stunning photography capabilities.",
+      "The iPhone 13 features a 6.1-inch Super Retina XDR display, A17 Bionic chip, and improved battery life. It has a dual-camera system with Night mode and cinematic mode for video recording, providing stunning photography capabilities.",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const products = [
       "https://m.media-amazon.com/images/I/31PGPjaOAZL.SY445_SX342_QL70_FMwebp.jpg",
     price: 155990,
     default:"yes",
+    home:'yes',
     description:
       "The MacBook Pro features Apple's M1 chip, delivering exceptional performance and efficiency. It has a 13.3-inch Retina display, a Magic Keyboard, and a battery life of up to 20 hours.",
   },
@@ -39,6 +41,7 @@ const products = [
       "https://m.media-amazon.com/images/I/314WspGErEL.SX300_SY300_QL70_FMwebp.jpg",
     price: 19988,
     default:"yes",
+    home:'yes',
     description:
       "Sony headphones offer high-resolution audio and noise cancellation technology. With comfortable ear pads and long battery life, they are perfect for immersive listening experiences.",
   },
@@ -538,6 +541,7 @@ const products = [
     image:
       "https://5.imimg.com/data5/SELLER/Default/2023/12/370807365/SY/TT/MU/72090224/55-inch-tcl-smart-4k-android-led-tv.jpg",
     price: 54990,
+    home:'yes',
     default:"yes",
     description:
       "The TCL 55 inch 4K TV offers vibrant colors and detailed visuals, perfect for movie nights and gaming.",

@@ -3,10 +3,9 @@ import "../Styles/nav.css";
 import AddToCart from "./shoppingPage/addtoCart";
 import LoginPage from "./auth/login";
 
-export default function Nav({ cart, setCart,user,setUser,updateUser}) {
+export default function Nav({ cart, setCart,user,setUser,updateUser,loginAction,setLoginAction}) {
   const [menuActive, setMenuActive] = useState(false);
   const [scale, setScale] = useState("550px");
-  const [loginAction, setLoginAction] = useState(false);
   const [loginPage, setLoginPage] = useState(0);
 
   const handleLogin = () => {
