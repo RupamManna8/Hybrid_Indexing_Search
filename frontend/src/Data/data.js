@@ -190,7 +190,7 @@ const products = [
     name: "GoPro Hero 10",
     keywords: ["camera", "gopro", "action camera", "gopro hero 10"],
     image:
-      "https://m.media-amazon.com/images/I/41qZ5bi6xAL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://gppro.in/wp-content/uploads/2021/10/GO-PRO-HERO-10-BLACK-2.jpg",
     price: 32999,
     description:
       "The GoPro Hero 10 captures stunning 5.3K video and 23MP photos, designed for adventurers and creators who want to capture their experiences.",
@@ -200,7 +200,7 @@ const products = [
     name: "Nikon D3500",
     keywords: ["camera", "nikon", "dslr", "nikon d3500"],
     image:
-      "https://m.media-amazon.com/images/I/41DLG+1Bb5L.SX300_SY300_QL70_FMwebp.jpg",
+    "https://m.media-amazon.com/images/I/71bDGZMrZEL.jpg",
     price: 36990,
     description:
       "The Nikon D3500 is an entry-level DSLR camera featuring a 24.2MP sensor and a variety of creative modes for capturing high-quality images.",
@@ -220,7 +220,7 @@ const products = [
     name: "Razer Blade 15",
     keywords: ["laptop", "razer", "gaming", "razer blade 15"],
     image:
-      "https://m.media-amazon.com/images/I/31N94lT2SnL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://images-cdn.ubuy.co.in/66a2ce9ac907cf412b442848-razer-blade-15-6-fhd-i7-10875h-16-512.jpg",
     price: 229990,
     description:
       "The Razer Blade 15 is a high-performance gaming laptop featuring an NVIDIA GeForce RTX graphics card, ideal for gamers seeking power and portability.",
@@ -230,7 +230,7 @@ const products = [
     name: "Sony A7 III",
     keywords: ["camera", "sony", "mirrorless", "sony a7 iii"],
     image:
-      "https://m.media-amazon.com/images/I/41G0H7fCCVL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/517CEyCXIHL._AC_UF1000,1000_QL80_.jpg",
     price: 139990,
     description:
       "The Sony A7 III is a versatile mirrorless camera with a 24.2MP full-frame sensor, offering outstanding performance in low light and high-speed shooting.",
@@ -240,7 +240,7 @@ const products = [
     name: "Huawei MateBook X Pro",
     keywords: ["laptop", "huawei", "matebook", "huawei matebook x pro"],
     image:
-      "https://m.media-amazon.com/images/I/41roSbF8BPL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://www.zdnet.com/a/img/resize/3bcce22829176be09aa6b842faec44cb57bbc836/2022/09/30/4f14b6e4-ec2a-4e43-bf02-89a973e673eb/huawei-matebook-x-pro-2022-770x433.jpg?auto=webp&fit=crop&height=172.5&width=294",
     price: 134990,
     description:
       "The Huawei MateBook X Pro features a stunning 3K touchscreen display and powerful performance, suitable for professionals and creatives.",
@@ -250,7 +250,7 @@ const products = [
     name: "Apple AirPods Pro",
     keywords: ["earbuds", "apple", "audio", "airpods pro"],
     image:
-      "https://m.media-amazon.com/images/I/41mKDKcUkUL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/51emillNpWL._AC_UF350,350_QL80_.jpg",
     price: 24999,
     description:
       "Apple AirPods Pro feature active noise cancellation and a customizable fit, delivering exceptional sound quality and seamless connectivity with Apple devices.",
@@ -280,7 +280,7 @@ const products = [
     name: "Samsung Galaxy Tab S7",
     keywords: ["tablet", "samsung", "galaxy tab", "galaxy tab s7"],
     image:
-      "https://m.media-amazon.com/images/I/41tU8C42IbL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/91r1NdBM6NL._AC_UF1000,1000_QL80_.jpg",
     price: 55999,
     description:
       "The Samsung Galaxy Tab S7 features a stunning 11-inch display and S Pen support, ideal for productivity and entertainment on the go.",
@@ -290,7 +290,7 @@ const products = [
     name: "Canon EOS R",
     keywords: ["camera", "canon", "mirrorless", "canon eos r"],
     image:
-      "https://m.media-amazon.com/images/I/41pCr2KbH4L.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/8115pNkutkL._AC_UF1000,1000_QL80_.jpg",
     price: 179990,
     description:
       "The Canon EOS R is a full-frame mirrorless camera featuring a 30.3MP sensor, offering versatility and high performance for photography enthusiasts.",
@@ -410,7 +410,7 @@ const products = [
     name: "Anker Soundcore Bluetooth Speaker",
     keywords: ["speaker", "anker", "audio", "soundcore"],
     image:
-      "https://m.media-amazon.com/images/I/41mI-6kvO5L.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/61y+b4M0RZL.jpg",
     price: 3499,
     description:
       "The Anker Soundcore Bluetooth speaker delivers powerful sound in a compact design, perfect for outdoor use with long battery life.",
@@ -420,7 +420,7 @@ const products = [
     name: "Sennheiser HD 280 Pro",
     keywords: ["headphones", "sennheiser", "audio", "hd 280 pro"],
     image:
-      "https://m.media-amazon.com/images/I/41ADMLbdpML.SX300_SY300_QL70_FMwebp.jpg",
+      "https://m.media-amazon.com/images/I/51Z1TYJpXQL._AC_UF1000,1000_QL80_.jpg",
     price: 8999,
     description:
       "Sennheiser HD 280 Pro headphones offer excellent sound isolation and clarity, making them suitable for both professional and casual listening.",
@@ -440,7 +440,7 @@ const products = [
     name: "MSI Gaming Laptop",
     keywords: ["laptop", "msi", "gaming", "msi gaming laptop"],
     image:
-      "https://m.media-amazon.com/images/I/51RMEK2mcXL.SX300_SY300_QL70_FMwebp.jpg",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/computer/s/n/d/katana-17-b13vfk-253in-gaming-laptop-msi-original-imagmmhgf9gjkhzf.jpeg?q=90&crop=false",
     price: 129990,
     description:
       "The MSI Gaming Laptop features high-end specifications with NVIDIA GeForce graphics, perfect for serious gamers.",
@@ -498,7 +498,7 @@ const products = [
     id: 50,
     name: "Xiaomi Mi 11",
     keywords: ["smartphone", "xiaomi", "phone", "mi 11"],
-    image: "https://m.media-amazon.com/images/I/41G7-WV8D2L.SY300_SX300.jpg",
+    image: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1619082747.31483931!400x400!85.png",
     price: 45999,
     description:
       "The Xiaomi Mi 11 features a 6.81-inch AMOLED display, Snapdragon 888 processor, and a triple camera system, offering premium features at an affordable price.",
