@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "../Styles/nav.css";
 import AddToCart from "./shoppingPage/addtoCart";
 import LoginPage from "./auth/login";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Nav({ cart, setCart,user,setUser,updateUser,loginAction,setLoginAction}) {
   const [menuActive, setMenuActive] = useState(false);
   const [scale, setScale] = useState("550px");
   const [loginPage, setLoginPage] = useState(0);
-
+  const navigate = useNavigate();
   const handleLogin = () => {
    setLoginPage(1);
   };
@@ -33,6 +35,10 @@ export default function Nav({ cart, setCart,user,setUser,updateUser,loginAction,
     }
   }
 
+  const backtoHome=()=>{
+    navigate(`/?userID=${user._id}`);
+  }
+
   return (
     <React.Fragment>
       <nav>
@@ -48,7 +54,7 @@ export default function Nav({ cart, setCart,user,setUser,updateUser,loginAction,
           </div>
           <ul>
             <li>
-              <a>Home</a>
+              <a onClick={backtoHome}>Home</a>
             </li>
             <li>
               <a>Shop</a>

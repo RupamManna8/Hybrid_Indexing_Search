@@ -24,6 +24,8 @@ const  LandingPage = () => {
   );
 }
 
+
+
 const Container = styled.div`
   
   display:flex;
@@ -55,18 +57,5 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
-
-  animation: fadeInZoom 4s ease-in forwards; /* Apply animation */
-  
-  @keyframes fadeInZoom {
-    0% {
-      opacity: 0;
-      transform: scale(1.1); /* Slight zoom-in at the beginning */
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1); /* Return to normal scale */
-    }
-  }
 `;
 export default LandingPage;

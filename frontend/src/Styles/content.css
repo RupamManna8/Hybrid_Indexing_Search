@@ -19,7 +19,7 @@
     max-width: 600px;
     flex-direction: column;
     display: flex;
-    animation: slideText 3s ease-in 2s backwards;
+    animation: slideText 1s ease-in;
     transition: all 0.3s ease;
     
 }
@@ -146,11 +146,13 @@
 }
 @keyframes slideText {
     0%{
-        transform: translateX(-800px);
+        transform: translateX(-200px);
         display: none;
+        opacity: 0;
     }
     100%{
         transform: translateX(0);
         display: flex;
+        opacity: 1;
     }
 }
