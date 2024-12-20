@@ -590,7 +590,7 @@ const products = [
     price: 13999,
   },
   {
-    id: 60,
+    id: 60,  
     name: "Motorola Moto G Power",
     keywords: ["smartphone", "motorola", "phone", "motorola moto g power"],
     image:

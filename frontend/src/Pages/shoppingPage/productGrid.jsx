@@ -33,7 +33,7 @@ const ProductGrid = ({ results, buyProduct, addToCart, user ,setCheckout,setChec
               <h3>{product.name}</h3>
               <p>Price: {product.price} ₹</p>
               <div className="cartAndBuy" style={{ display: "flex", gap: "10px" }}>
-                <button className="buyButton" onClick={(e) => { e.stopPropagation(); buyProduct(product); }}>Buy Now</button>
+                <button className="buyButton" onClick={(e) => { e.stopPropagation(); productDetails(product); }}>Checkout</button>
                 <button className="cartButton" onClick={(e) => { e.stopPropagation(); handleAddToCart(product); }}>
                   {isProductInCart(product) ? "In Cart" : "Add to Cart"}
                 </button>
